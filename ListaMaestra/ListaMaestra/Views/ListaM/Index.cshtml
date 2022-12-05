@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@Scripts.Render("~/bundles/ListaM")
+
+<div style="margin-top:5%!important" id="Busquedad">
+    <div class="row">
+        <div class="col-lg-2">
+            <label>¿Mostrar Inhabilitados?</label>
+        </div>
+        <div class="col-lg-1">
+            <select name="select" class="form-control">
+                <option value="value1" selected>Sí</option>
+                <option value="value2">No</option>
+            </select>
+        </div>
+        <div class="col-lg-1">
+            <label>Nivel</label>
+        </div>
+        <div class="col-lg-1">
+            <select name="select" class="form-control">
+                <option value="value2">1</option>
+                <option value="value3">2</option>
+                <option value="value4">3</option>
+                <option value="value5">4</option>
+            </select>
+        </div>
+        <div class="col-lg-1">
+            <label>Área</label>
+        </div>
+        <div class="col-lg-2">
+            <select name="select" class="form-control">
+                <option value="value2">CA</option>
+                <option value="value3">CP</option>
+                <option value="value4">LP</option>
+                <option value="value5">SA</option>
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-success">Buscar</button>
+        </div>
+    </div>
+</div>
+
+<div id="contenido" style="margin-top:2%!important">
+    <table>
+        <thead>
+            <tr class="table-info">
+                <th colspan="14">Lista Maestra de Documentos</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Nivel</th>
+                <th>Área</th>
+                <th>N.</th>
+                <th>Código</th>
+                <th>Originador</th>
+                <th>Nombre del documento</th>
+                <th>Elaboración</th>
+                <th>Revisión y Aprobación</th>
+                <th>Aprobado por todos los involucrados</th>
+                <th>Difusión</th>
+                <th>Fecha de la última revisión</th>
+                <th>Observaciones</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyPrincipal">
+        </tbody>
+    </table>
+</div>
